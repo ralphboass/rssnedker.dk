@@ -211,3 +211,17 @@ document.querySelectorAll('.project-slider').forEach(slider => {
     showSlide(current);
   });
 });
+
+// Read More Toggle Function
+function toggleReadMore() {
+  const hiddenContent = document.getElementById('hiddenContent');
+  const button = document.querySelector('.read-more-btn');
+  
+  if (hiddenContent.classList.contains('show')) {
+    hiddenContent.classList.remove('show');
+    button.textContent = 'Læs mere...';
+  } else {
+    hiddenContent.classList.add('show');
+    button.textContent = 'Læs mindre';
+  }
+}

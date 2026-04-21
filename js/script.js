@@ -225,3 +225,77 @@ function toggleReadMore() {
     button.textContent = 'Læs mindre';
   }
 }
+
+// Service Card Click Handler
+document.addEventListener('DOMContentLoaded', function() {
+  const serviceCards = document.querySelectorAll('.service-card.clickable');
+  
+  serviceCards.forEach(card => {
+    card.addEventListener('click', function() {
+      const serviceName = this.getAttribute('data-service');
+      const gallery = document.getElementById(`gallery-${serviceName}`);
+      
+      // Close all other galleries
+      document.querySelectorAll('.service-gallery').forEach(g => {
+        if (g !== gallery) {
+          g.classList.remove('active');
+        }
+      });
+      
+      // Toggle current gallery
+      gallery.classList.toggle('active');
+      
+      // Scroll to gallery
+      if (gallery.classList.contains('active')) {
+        setTimeout(() => {
+          gallery.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      }
+    });
+  });
+  
+  // Close gallery buttons
+  document.querySelectorAll('.close-gallery').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const gallery = this.closest('.service-gallery');
+      gallery.classList.remove('active');
+    });
+  });
+  
+  // Toggle Projects Button
+  const toggleProjectsBtn = document.getElementById('toggleProjectsBtn');
+  const hiddenProjects = document.querySelector('.hidden-projects');
+  
+  if (toggleProjectsBtn && hiddenProjects) {
+    toggleProjectsBtn.addEventListener('click', function() {
+      if (hiddenProjects.style.display === 'none') {
+        hiddenProjects.style.display = 'grid';
+        this.textContent = 'Skjul projekter';
+        
+        // Initialize sliders for newly shown projects
+        hiddenProjects.querySelectorAll('.project-slider').forEach(slider => {
+          const slides = slider.querySelectorAll('.slide');
+          let current = 0;
+
+          const showSlide = (index) => {
+            slides.forEach((s, i) => s.classList.toggle('active', i === index));
+          };
+
+          slider.querySelector('.next').addEventListener('click', () => {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+          });
+
+          slider.querySelector('.prev').addEventListener('click', () => {
+            current = (current - 1 + slides.length) % slides.length;
+            showSlide(current);
+          });
+        });
+      } else {
+        hiddenProjects.style.display = 'none';
+        this.textContent = 'Se flere projekter';
+      }
+    });
+  }
+});

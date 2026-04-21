@@ -39,25 +39,82 @@
         <div class="container">
             <h2>Ydelser</h2>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card clickable" data-service="mobler">
                     <i class="fas fa-hammer"></i>
                     <h3>Møbler</h3>
                     <p>Individuel møbelfremstilling af vinduer og døre og andre specialønsker.</p>
+                    <div class="expand-icon">+</div>
                 </div>
-                <div class="service-card">
+                <div class="service-card clickable" data-service="renovering">
                     <i class="fas fa-home"></i>
                     <h3>Renovering</h3>
                     <p>Fornyelse og modernisering af bolig eller erhvervsejendomme.</p>
+                    <div class="expand-icon">+</div>
                 </div>
-                <div class="service-card">
+                <div class="service-card clickable" data-service="indretning">
                     <i class="fas fa-couch"></i>
                     <h3>Indretning</h3>
                     <p>Skræddersyede møbler og indbyggede løsninger til dit hjem.</p>
+                    <div class="expand-icon">+</div>
                 </div>
-                <div class="service-card">
+                <div class="service-card clickable" data-service="servicearbejde">
                     <i class="fas fa-tools"></i>
                     <h3>Servicearbejde</h3>
                     <p>Hurtig og pålidelig hjælp til opfølgende former for tømreropgaver.</p>
+                    <div class="expand-icon">+</div>
+                </div>
+            </div>
+            
+            <!-- Service Gallery Sections -->
+            <div class="service-gallery" id="gallery-mobler">
+                <div class="gallery-content">
+                    <h3>Møbler Galleri</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="img/trappe-projekt-1.JPG" alt="Møbler eksempel 1"></div>
+                        <div class="gallery-item"><img src="img/trappe-projekt-2.JPG" alt="Møbler eksempel 2"></div>
+                        <div class="gallery-item"><img src="img/trappe-projekt-3.JPG" alt="Møbler eksempel 3"></div>
+                        <div class="gallery-item"><img src="img/indbygget-skab-1.JPG" alt="Møbler eksempel 4"></div>
+                    </div>
+                    <button class="close-gallery">Luk <i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <div class="service-gallery" id="gallery-renovering">
+                <div class="gallery-content">
+                    <h3>Renovering Galleri</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="img/doer-projekt-1.JPG" alt="Renovering eksempel 1"></div>
+                        <div class="gallery-item"><img src="img/doer-projekt-2.JPG" alt="Renovering eksempel 2"></div>
+                        <div class="gallery-item"><img src="img/hero-bg.jpg" alt="Renovering eksempel 3"></div>
+                        <div class="gallery-item"><img src="img/about-image.JPG" alt="Renovering eksempel 4"></div>
+                    </div>
+                    <button class="close-gallery">Luk <i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <div class="service-gallery" id="gallery-indretning">
+                <div class="gallery-content">
+                    <h3>Indretning Galleri</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="img/indbygget-skab-1.JPG" alt="Indretning eksempel 1"></div>
+                        <div class="gallery-item"><img src="img/indbygget-skab-2.JPG" alt="Indretning eksempel 2"></div>
+                        <div class="gallery-item"><img src="img/indbygget-skab-3.JPG" alt="Indretning eksempel 3"></div>
+                        <div class="gallery-item"><img src="img/trappe-projekt-1.JPG" alt="Indretning eksempel 4"></div>
+                    </div>
+                    <button class="close-gallery">Luk <i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <div class="service-gallery" id="gallery-servicearbejde">
+                <div class="gallery-content">
+                    <h3>Servicearbejde Galleri</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="img/doer-projekt-1.JPG" alt="Service eksempel 1"></div>
+                        <div class="gallery-item"><img src="img/trappe-projekt-2.JPG" alt="Service eksempel 2"></div>
+                        <div class="gallery-item"><img src="img/indbygget-skab-2.JPG" alt="Service eksempel 3"></div>
+                        <div class="gallery-item"><img src="img/about-image.JPG" alt="Service eksempel 4"></div>
+                    </div>
+                    <button class="close-gallery">Luk <i class="fas fa-times"></i></button>
                 </div>
             </div>
         </div>
@@ -130,12 +187,68 @@
       </div>
 
     </div>
+    
+    <!-- Hidden Projects -->
+    <div class="projects-grid hidden-projects" style="display: none;">
+      <!-- Projekt 4 -->
+      <div class="project-card">
+        <div class="project-slider">
+          <div class="slide active">
+            <img src="img/hero-bg.jpg" alt="Projekt 4 - billede 1">
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <div class="project-info">
+          <h3>Projekt 4</h3>
+          <p>Beskrivelse kommer snart.</p>
+        </div>
+      </div>
+
+      <!-- Projekt 5 -->
+      <div class="project-card">
+        <div class="project-slider">
+          <div class="slide active">
+            <img src="img/about-image.JPG" alt="Projekt 5 - billede 1">
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <div class="project-info">
+          <h3>Projekt 5</h3>
+          <p>Beskrivelse kommer snart.</p>
+        </div>
+      </div>
+
+      <!-- Projekt 6 -->
+      <div class="project-card">
+        <div class="project-slider">
+          <div class="slide active">
+            <img src="img/logo.jpg" alt="Projekt 6 - billede 1">
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <div class="project-info">
+          <h3>Projekt 6</h3>
+          <p>Beskrivelse kommer snart.</p>
+        </div>
+      </div>
+    </div>
+    
     <div class="text-center">
-      <a href="#kontakt" class="secondary-button">Se flere projekter</a>
+      <button class="secondary-button" id="toggleProjectsBtn">Se flere projekter</button>
     </div>
   </div>
 </section>
 
+<section id="om-os" class="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Om rs snedker</h2>
+                <p>Som uddannet møbelsnedker har jeg gennem mange år opbygget et solidt fundament af erfaring med forarbejdning af det alsidige og fantastiske materiale træ. Passionen for dette håndværk har gennem tiden ført mig til en lang række forskellige håndværksvirksomheder, hvor jeg har haft mulighed for at lære nye teknikker og forarbejdningsmetoder.</p>
+                <p>Det har gjort mig til en alsidig og pålidelig samarbejdspartner, når det gælder løsningen af de opgaver og udfordringer, mine kunder står overfor.
     <section id="om-os" class="about">
         <div class="container">
             <div class="about-content">

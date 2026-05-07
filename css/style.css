@@ -915,29 +915,6 @@ footer::before {
 .footer-section a {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    transition: var(--transition);
-    display: inline-block;
-    position: relative;
-    padding-left: 0;
-}
-
-.footer-section ul li a::before {
-    content: '→';
-    position: absolute;
-    left: -20px;
-    opacity: 0;
-    transition: var(--transition);
-    color: var(--accent-color);
-}
-
-.footer-section ul li a:hover {
-    color: white;
-    padding-left: 20px;
-}
-
-.footer-section ul li a:hover::before {
-    opacity: 1;
-    left: 0;
 }
 
 .footer-section.contact-info p {

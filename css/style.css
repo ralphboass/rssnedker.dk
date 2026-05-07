@@ -921,6 +921,14 @@ footer::before {
     padding-left: 0;
 }
 
+.footer-section:nth-child(2) a {
+    color: #654321;
+}
+
+.footer-section:nth-child(2) h3 {
+    color: #654321;
+}
+
 .footer-section ul li a::before {
     content: '→';
     position: absolute;

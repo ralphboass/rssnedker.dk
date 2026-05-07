@@ -598,7 +598,7 @@ section {
 
 /* Contact Section */
 .contact {
-    padding: 4rem 0;
+    padding: 4rem 0 6rem 0;
     background-color: var(--white);
     position: relative;
 }
@@ -639,16 +639,18 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-top: 3rem;
+    max-height: 500px;
 }
 
 
 .contact-info {
     background: var(--white);
-    padding: 3rem;
+    padding: 2.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .contact-info h3 {

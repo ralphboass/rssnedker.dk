@@ -604,11 +604,10 @@ section {
 }
 
 .contact-image {
-    height: 100%;
     width: 100%;
     border-radius: var(--border-radius);
     object-fit: cover;
-    object-position: center top;
+    object-position: center;
 }
 
 
@@ -639,7 +638,7 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-top: 3rem;
-    max-height: 500px;
+    align-items: start;
 }
 
 
@@ -648,9 +647,6 @@ section {
     padding: 2.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
 }
 
 .contact-info h3 {

@@ -1265,6 +1265,7 @@ footer::before {
 }
 
 .project-slider img {
+    width: 100%;
     object-fit: cover;
     height: 300px;
 }

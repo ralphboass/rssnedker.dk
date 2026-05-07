@@ -605,7 +605,7 @@ section {
 
 .contact-image {
     width: 100%;
-    max-height: 450px;
+    height: 450px;
     border-radius: var(--border-radius);
     object-fit: cover;
     object-position: center;
@@ -648,6 +648,7 @@ section {
     padding: 2.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    max-height: 450px;
 }
 
 .contact-info h3 {

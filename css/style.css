@@ -605,7 +605,7 @@ section {
 
 .contact-image {
     flex: 1;
-    height: 450px;
+    height: 500px;
     border-radius: var(--border-radius);
     object-fit: cover;
     object-position: center;
@@ -647,7 +647,7 @@ section {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     flex: 1;
-    height: 450px;
+    height: 500px;
     box-sizing: border-box;
 }
 
@@ -926,6 +926,10 @@ footer::before {
 
 .footer-section:nth-child(2) h3 {
     color: #654321;
+}
+
+.footer-section:nth-child(2) h3::after {
+    display: none;
 }
 
 .footer-section ul li a::before {
